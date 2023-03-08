@@ -1,30 +1,30 @@
-<script setup lang="ts" generic="T extends any, O extends any">
-defineOptions({
-  name: 'IndexPage',
-})
+<script setup lang="ts">
+import { ref } from 'vue'
+import { useRouter } from 'vue-router'
+import TheInput from '~/components/TheInput.vue'
 
-const name = $ref('')
+const name = ref('')
 
 const router = useRouter()
 const go = () => {
-  if (name)
-    router.push(`/hi/${encodeURIComponent(name)}`)
+  if (name.value)
+    router.push(`/hi/${encodeURIComponent(name.value)}`)
 }
 </script>
 
 <template>
   <div>
-    <div i-carbon-campsite text-4xl inline-block />
+    <div class="i-carbon-campsite text-4xl inline-block" />
     <p>
-      <a rel="noreferrer" href="https://github.com/antfu/vitesse-lite" target="_blank">
-        Vitesse Lite
+      <a rel="noreferrer" href="https://github.com/skywalker512/rspacksse-lite" target="_blank">
+        Rspacksse Lite
       </a>
     </p>
     <p>
-      <em text-sm op75>Opinionated Vite Starter Template</em>
+      <em class="text-sm opacity-75">Opinionated Rspack Starter Template</em>
     </p>
 
-    <div py-4 />
+    <div class="py-4" />
 
     <TheInput
       v-model="name"
