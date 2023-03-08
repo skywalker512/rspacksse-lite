@@ -15,7 +15,6 @@ specifiers:
   eslint: ^8.35.0
   jsdom: ^21.1.0
   lint-staged: ^13.1.2
-  pnpm: ^7.29.1
   postcss: ^8.4.21
   postcss-loader: ^7.0.2
   serve: ^14.2.0
@@ -50,7 +49,6 @@ devDependencies:
   eslint: 8.35.0
   jsdom: 21.1.0
   lint-staged: 13.1.2
-  pnpm: 7.29.1
   postcss: 8.4.21
   postcss-loader: 7.0.2_6jdsrmfenkuhhw3gx4zvjlznce
   serve: 14.2.0
@@ -5196,12 +5194,6 @@ packages:
   /pluralize/8.0.0:
     resolution: {integrity: sha512-Nc3IT5yHzflTfbjgqWcCPpo7DaKy4FnpB0l/zCAW0Tc7jxAiuqSxHasntB3D7887LSrA93kDJ9IXovxJYxyLCA==}
     engines: {node: '>=4'}
-    dev: true
-
-  /pnpm/7.29.1:
-    resolution: {integrity: sha512-dn+65B2XpMIin7sQZvBIJ2Zyx8Z7LK95qyAvgEPE8qXkWYL/LuwpfMfK9Muc7+zNnpPwiQgtGEsxgOtuabFibQ==}
-    engines: {node: '>=14.6'}
-    hasBin: true
     dev: true
 
   /postcss-import/14.1.0_postcss@8.4.21:
