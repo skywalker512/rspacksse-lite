@@ -36,9 +36,6 @@
 
 - ☁️ Deploy on Vercel, zero-config
 
-
-<br>
-
 ## Pre-packed
 
 ### UI Frameworks

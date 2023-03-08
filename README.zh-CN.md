@@ -31,10 +31,6 @@
 
 - 😃 [各种图标集为你所用](https://github.com/egoist/tailwindcss-icons)
 
-- 🔥 Use the [new `<script setup>` style](https://github.com/vuejs/rfcs/pull/227)
-
-- ✅ Use [Vitest](http://vitest.dev/) for unit and components testing
-
 - 🔥 使用 [新的 `<script setup>` 语法](https://github.com/vuejs/rfcs/pull/227)
 
 - ✅ 使用 [Vitest](http://vitest.dev/) 进行单元和组件测试
@@ -42,8 +38,6 @@
 - 🦾 TypeScript, 当然
 
 - ☁️ 零配置部署 Vercel
-
-<br>
 
 ## 预配置
 
