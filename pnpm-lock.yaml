@@ -5,8 +5,6 @@ specifiers:
   '@egoist/tailwindcss-icons': ^1.0.7
   '@iconify-json/carbon': ^1.1.16
   '@rspack/cli': 0.0.25
-  '@rspack/core': 0.0.25
-  '@rspack/dev-server': 0.0.25
   '@types/node': ^18.14.6
   '@vitejs/plugin-vue': ^4.0.0
   '@vue/test-utils': ^2.3.0
@@ -40,8 +38,6 @@ devDependencies:
   '@egoist/tailwindcss-icons': 1.0.7_tailwindcss@3.2.7
   '@iconify-json/carbon': 1.1.16
   '@rspack/cli': 0.0.25_webpack@5.75.0
-  '@rspack/core': 0.0.25
-  '@rspack/dev-server': 0.0.25_ntz5larckz2j2cj3lavmjxl7ci
   '@types/node': 18.14.6
   '@vitejs/plugin-vue': 4.0.0_vite@4.1.4+vue@3.2.47
   '@vue/test-utils': 2.3.0_vue@3.2.47
