@@ -67,3 +67,7 @@ npx degit skywalker512/rspacksse-lite my-rspacksse-app
 cd my-rspacksse-app
 pnpm i # If you don't have pnpm installed, run: npm install -g pnpm
 ```
+
+or use vercel to clone and deploy
+
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/skywalker512/rspacksse-lite)
