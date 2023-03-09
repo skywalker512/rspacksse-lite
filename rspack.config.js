@@ -28,6 +28,9 @@ const config = {
         use: [
           {
             loader: require.resolve('vue-rsloader'),
+            options: {
+              reactivityTransform: true,
+            },
           },
         ],
       },

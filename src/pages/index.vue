@@ -1,14 +1,13 @@
 <script setup lang="ts">
-import { ref } from 'vue'
 import { useRouter } from 'vue-router'
 import TheInput from '~/components/TheInput.vue'
 
-const name = ref('')
+const name = $ref('')
 
 const router = useRouter()
 const go = () => {
-  if (name.value)
-    router.push(`/hi/${encodeURIComponent(name.value)}`)
+  if (name)
+    router.push(`/hi/${encodeURIComponent(name)}`)
 }
 </script>
 

@@ -1,3 +1,4 @@
+/// <reference types="vue/macros-global" />
 
 // ts find file not exist error
 // declare module '*.vue' {
