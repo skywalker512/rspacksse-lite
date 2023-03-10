@@ -20,7 +20,7 @@ const go = () => {
       </a>
     </p>
     <p>
-      <em class="text-sm opacity-75">Opinionated Rspack Starter Template</em>
+      <em class="text-sm opacity-75 t111">Opinionated Rspack Starter Template</em>
     </p>
 
     <div class="py-4" />

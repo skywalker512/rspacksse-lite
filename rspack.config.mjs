@@ -1,4 +1,7 @@
-const { VueLoaderPlugin } = require('vue-rsloader')
+import { VueLoaderPlugin } from 'vue-rsloader'
+import rehypeHighlight from 'rehype-highlight'
+import emoji from 'remark-emoji'
+import images from 'remark-images'
 
 /** @type {import('@rspack/cli').Configuration} */
 const config = {
@@ -16,10 +19,28 @@ const config = {
   module: {
     rules: [
       {
+        test: /\.mdx?$/,
+        use: [
+          {
+            loader: 'babel-loader',
+          },
+          {
+            loader: '@mdx-js/loader',
+            /** @type {import('@mdx-js/loader').Options} */
+            options: {
+              providerImportSource: '@mdx-js/vue',
+              jsx: true,
+              rehypePlugins: [rehypeHighlight],
+              remarkPlugins: [emoji, images],
+            },
+          },
+        ],
+      },
+      {
         test: /\.css$/,
         use: [
           {
-            loader: require.resolve('postcss-loader'),
+            loader: 'postcss-loader',
           },
         ],
       },
@@ -27,7 +48,7 @@ const config = {
         test: /\.vue$/,
         use: [
           {
-            loader: require.resolve('vue-rsloader'),
+            loader: 'vue-rsloader',
             /** @type {import('vue-rsloader').VueLoaderOptions} */
             options: {
               reactivityTransform: true,
@@ -63,4 +84,4 @@ const config = {
   },
 }
 
-module.exports = config
+export default config

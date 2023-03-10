@@ -1,0 +1,19 @@
+diff --git a/dist/rspack-cli.js b/dist/rspack-cli.js
+index 7b4e6b3f2205cd1daf0ee012430ac705ffd94487..2fe112e3903c86e2a8a2f3d44bfb465b84fb729d 100644
+--- a/dist/rspack-cli.js
++++ b/dist/rspack-cli.js
+@@ -179,12 +179,12 @@ class RspackCLI {
+             if (!fs_1.default.existsSync(resolvedConfigPath)) {
+                 throw new Error(`config file "${resolvedConfigPath}" not exists`);
+             }
+-            loadedConfig = require(resolvedConfigPath);
++            loadedConfig = (await import(resolvedConfigPath)).default;
+         }
+         else {
+             let defaultConfigPath = path_1.default.resolve(process.cwd(), defaultConfig);
+             if (fs_1.default.existsSync(defaultConfigPath)) {
+-                loadedConfig = require(defaultConfigPath);
++                loadedConfig = (await import(defaultConfigPath)).default;
+             }
+             else {
+                 let entry = {};
